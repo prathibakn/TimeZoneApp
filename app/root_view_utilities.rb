@@ -15,8 +15,10 @@ def time_label(xPosition, yPosition)
 end
 
 def select_time_zone_button(xPosition, yPosition)
-  button = UIButton.buttonWithType(UIButtonTypeRoundedRect)
+ # button = UIButton.buttonWithType(UIButtonTypeRoundedRect)
+  button = UIButton.buttonWithType(UIButtonTypeCustom)
   button.frame = CGRectMake(xPosition, yPosition, 90, 90)
+  button.setBackGroundImage(UIImage.imageNamed("btnSelect.png"), forState:UIControlStateNormal)
   button.setTitle("Select", forState:UIControlStateNormal)
   button
 end
